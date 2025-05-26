@@ -9,6 +9,9 @@ RUN pip install --upgrade pip && \
 
 FROM python:3.13.3-slim AS app
 
+RUN apt-get update && \
+    apt-get install -y curl
+
 RUN groupadd -r appuser && \
     useradd -r -g appuser -m -d /home/appuser appuser
 
