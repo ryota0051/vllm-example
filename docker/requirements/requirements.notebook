@@ -1,0 +1,4 @@
+langchain
+langchain-core
+langchain-openai
+jupyterlab>=4.4.1
